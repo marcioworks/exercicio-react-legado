@@ -1,5 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Componente from "./componente"
+import Primeiro ,{  Segundo } from "./componente"
 
-ReactDom.render(<Componente value="Show de Bola!"></Componente>,document.getElementById('app'))
+ReactDom.render(
+    <div>
+        <Primeiro />
+        <Segundo />
+    </div>
+    , document.getElementById('app'))
