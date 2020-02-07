@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import StateComponent from './stateComponent'
+import ClassComponent from './ClassComponent'
 
 
 ReactDom.render(
-    <StateComponent label="Contador" initialValue={10}/>
+    <ClassComponent value='Componente Classe '/>
     , document.getElementById('app'))
