@@ -1,7 +1,9 @@
 export function changeValue(e){
-    console.log('mudou')
+    console.log("change value")
     return{
-        type: 'VALUE_CHANGED',
-        payload:e.target.value
+        type:'VALUE_CHANGED',
+        payLoad: e.target.value
     }
+    
+
 }

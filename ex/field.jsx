@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {changeValue} from './fieldActions'
 
@@ -8,17 +8,16 @@ class Field extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.value}</h1>
+                <label>{this.props.value}</label><br/>
                 <input onChange={this.props.changeValue} value={this.props.value}></input>
             </div>
         )
     }
 }
 
-
-function mapStateToProps(state) {
-    return {
-        value: state.field.value
+function mapStateToProps(state){
+    return{
+        value:state.field.value
     }
 }
 
